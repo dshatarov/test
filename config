@@ -1,0 +1,23 @@
+[ req ]
+prompt = no
+default_bits       = 2048
+distinguished_name = req_distinguished_name
+req_extensions     = req_ext
+[ req_distinguished_name ]
+C="US"
+ST="California"
+L="Palo Alto"
+O="VMware"
+CN=70524207
+
+[ req_ext ]
+subjectAltName = @alt_names
+keyUsage = keyEncipherment
+extendedKeyUsage = serverAuth, clientAuth
+[alt_names]
+DNS.1   = tdx-sdev-app-1.vmware.com
+DNS.2   = tdx-sdev-pub.vmware.com
+DNS.3   = tdx-sdev-trans.vmware.com
+DNS.4   = tdx-sdev-util.vmware.com
+DNS.5   = tdx-sdev-api.vmware.com
+
