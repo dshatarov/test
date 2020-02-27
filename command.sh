@@ -1,0 +1,1 @@
+openssl req -out tdx-sdev-app-1.vmware.com.csr -newkey rsa:2048 -nodes -keyout tdx-sdev-app-1.vmware.com.key -config config
